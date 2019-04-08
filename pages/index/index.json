@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "infoComponent": "/components/infoComponent/infoComponent",
+        "artComponent": "/components/artComponent/artComponent"
+    }
+}

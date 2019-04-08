@@ -1,0 +1,14 @@
+/**app.wxss**/
+@import "/static/css/icon.wxss";
+
+.container {
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  
+} 

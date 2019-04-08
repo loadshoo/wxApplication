@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="head">
+        <text class='header'>AOE女团</text>
+        <text class="takeus">联系我们</text>
+        <text class='block'></text>
+    </view>
+    <view class="icon">
+        <button bindtap="bindViewTap" class='iconfont icon-changyonglogo28'></button>
+        <button bindtap="telPhone" class='iconfont icon-dianhua'></button>
+        <button class='iconfont icon-ai37' open-type="share" data-name="pageShare"></button>
+    </view>
+    <view class='content'>
+        <view class='yellow'></view>
+        <view>
+            <image class='frist' src='/static/images/frist.png' mode='widthFix'></image>
+            <image class='left-note' src='/static/images/left-note.png'></image>
+            <text class='txt'>以创意为导向，专注泛娱乐内容创作、新潮品牌推广的互联网文化传媒机构</text>
+            <image class='right-note' src='/static/images/right-note.png'></image>
+        </view>
+    </view>
+    <view class='list'>
+        <view class='location'>
+            <image class='v-img' src='/static/images/location.png' mode='widthFix'></image>
+            <!-- 旁白组件 -->
+            <infoComponent id="infoComponent" image="/static/images/threejao.png" header="战略地位" content="LOCATION" cssStyle="smail-header smail-header-right">
+            </infoComponent>
+            <view class='noet'>基于泛娱乐业态，全形态的游戏电竞内容运营， 全维度打造 偶像女团、电竞内容创作、 艺人经纪衍生的产业布局。</view>
+        </view>
+        <view class='aoe-team'>
+            <image class='aoe-team-img' src="/static/images/aoeTeam.png" mode='widthFix'></image>
+            <!-- 旁白组件 -->
+            <infoComponent id="infoComponent" image="/static/images/threejao.png" header="AOE女团" content="TEAM" cssStyle="smail-header smail-header-center">
+            </infoComponent>
+            <view class='text-team'>
+                <text>亚洲第一电竞偶像女团， 泛娱乐化的超级内容综合体。</text>
+            </view>
+        </view>
+
+    </view>
+    <view class='art-list'>
+        <view class='art-header'>
+            <text class='art-txt art-txt-top'>部分</text>
+            <view class='art-sp'></view>
+            <view class='art-tw'></view>
+            <text class='art-txt-bottom'>艺人</text>
+        </view>
+        <!-- 部分艺人列表组件 -->
+        <artComponent id="artComponent" arter="{{arter}}"></artComponent>
+    </view>
+    <view class='footer'>
+        <!-- 旁白组件 -->
+        <infoComponent id="infoComponent" image="/static/images/threejao.png" header="合作案例" content="TEAM" imageArt="{{img}}" cssStyle="smail-header smail-header-center">
+        </infoComponent>
+        <view class='lanbor'>
+            <view class='foot-boder-top'></view>
+            <view class='foot-boder-bottom'></view>
+            <swiper>
+                <swiper-item wx:for="{{5}}" wx:key="key">
+                    <image class='slide-image' src='/static/images/CF-img.png' mode='widthFix'></image>
+                </swiper-item>
+            </swiper>
+            <view class='info'>
+                <text>CF双端职业联赛</text>
+            </view>
+            <view class='time'>
+                <text>。\2018</text>
+            </view>
+        </view>
+    </view>
+</view>

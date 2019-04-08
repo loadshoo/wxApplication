@@ -1,0 +1,57 @@
+<block wx:for='{{arter}}' wx:index='index' wx:key="key">
+    <view class='art'>
+        <image wx:if="{{index%2==0}}" class="art-one" src='{{item.imageArt}}' mode='widthFix'></image>
+        <image wx:else class="art-one art-one-right" src='{{item.imageArt}}' mode='widthFix'></image>
+        <image class="art-img{{index+1}} art-img" src='{{item.imageInfo}}' mode='widthFix'></image>
+        <view wx:if="{{index%2==0}}" class='left-art-txt'>
+            <view class='txt-border'>
+                <view class='txt-border-pad'>
+                    <image class='list1' src='{{item.imgNumber}}' mode='widthFix'></image>
+                    <text class='fs20 text-block'>NAME:</text>
+                    <text class='fs42 text-block'>{{item.name}}</text>
+                </view>
+            </view>
+        </view>
+        <view wx:else class='left-art-txt left-art-txt-right'>
+            <view class='txt-border'>
+                <view class='txt-border-pad'>
+                    <image class='list1' src='{{item.imgNumber}}' mode='widthFix'></image>
+                    <text class='fs20 text-block'>NAME:</text>
+                    <text class='fs42 text-block'>{{item.name}}</text>
+                </view>
+            </view>
+        </view>
+        <view wx:if="{{index%2==0}}" class='left-art-txt-bottom'>
+            <view class='info-top-left'></view>
+            <view class='txt-width'>
+                <text>{{item.info1}}</text>
+            </view>
+            <view class='txt-width'>
+                <text>{{item.info2}}</text>
+            </view>
+            <view class='txt-width'>
+                <text>{{item.info3}}</text>
+            </view>
+            <view class='txt-width'>
+                <text>{{item.info4}}</text>
+            </view>
+            <view class='infof-right-bottom'></view>
+        </view>
+        <view wx:else class='left-art-txt-bottom left-art-txt-right'>
+            <view class='info-top-left'></view>
+            <view class='txt-width'>
+                <text>{{item.info1}}</text>
+            </view>
+            <view class='txt-width'>
+                <text>{{item.info2}}</text>
+            </view>
+            <view class='txt-width'>
+                <text>{{item.info3}}</text>
+            </view>
+            <view class='txt-width'>
+                <text>{{item.info4}}</text>
+            </view>
+            <view class='infof-right-bottom'></view>
+        </view>
+    </view>
+</block>

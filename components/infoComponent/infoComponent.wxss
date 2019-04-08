@@ -1,0 +1,60 @@
+.smail-header {
+    position: relative;
+    width: 200rpx;
+    height: 200rpx;
+    margin-left: 30rpx;
+}
+
+.smail-header-center {
+    margin: auto;
+}
+
+.smail-header-right {
+    display: inline-block;
+    margin-bottom: 60rpx;
+}
+
+.threejao {
+    position: absolute;
+    top: 40rpx;
+    right: 20rpx;
+    width: 20rpx;
+    height: 15rpx;
+}
+
+.blur1 {
+    position: absolute;
+    top: 70rpx;
+    right: -30rpx;
+    width: 136rpx;
+    height: 5rpx;
+    background: #1c3c8d;
+    margin: 10rpx 0rpx;
+}
+
+.txt-location {
+    position: absolute;
+    top: 85rpx;
+    right: 0rpx;
+    margin: 10rpx;
+}
+
+.blur2 {
+    position: absolute;
+    top: 150rpx;
+    left: -30rpx;
+    width: 136rpx;
+    height: 5rpx;
+    background: #1c3c8d;
+    margin: 10rpx 10rpx;
+}
+
+.txt-location2 {
+    position: absolute;
+    top: 170rpx;
+    font-size: 20rpx;
+    width: 136rpx;
+    margin-left: 10rpx;
+    left: -30rpx;
+    text-align: center;
+}
